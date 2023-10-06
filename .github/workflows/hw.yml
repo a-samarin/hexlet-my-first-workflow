@@ -1,9 +1,8 @@
 # Name of workflow
-name: Hello World
+name: hello-world
 
 # Trigger the workflow on push or pull request
-on:
-  - push
+on: push
 
 jobs:
   build:
@@ -12,5 +11,4 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: print Hello World
-      - run: make say-hello
+      - run: ls -la
